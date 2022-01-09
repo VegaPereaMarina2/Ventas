@@ -1,5 +1,3 @@
-//Utilizar los operadores $sum, $multiply, $divide, $avg, $max y operadores de fechas.
-
 //Muestra la ganancia total de cada articulo vendido con su noombre y fecha.
 db.ventas.aggregate(
    [   
