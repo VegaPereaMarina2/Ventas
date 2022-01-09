@@ -1,4 +1,4 @@
-//Muestra la ganancia total de cada articulo vendido con su noombre y fecha.
+//Muestra la ganancia total de cada articulo vendido con su nombre y fecha.
 db.ventas.aggregate(
    [   
      { $project: { fechaVenta: 1, articuloVendido: 1, gananciaTotal: { $multiply: [ "$precioUnitario", "$numeroUnidades" ] } } }
